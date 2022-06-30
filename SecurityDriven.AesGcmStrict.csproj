@@ -15,6 +15,7 @@
 		<PackageLicenseExpression>MIT</PackageLicenseExpression>
 		<PackageIconUrl>https://avatars.githubusercontent.com/u/9137858?s=128</PackageIconUrl>
 		<PackageReleaseNotes>Replacement for System.Security.Cryptoraphy.AesGcm</PackageReleaseNotes>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
 		<Description>Wraps AesGcm and enforces AesGcm Tag to be exactly 16 bytes. Use AesGcmStrict instead of AesGcm. AesGcm allows truncated Tags (ex. any AesGcm-provided Tag truncated to 12 bytes will successfully decrypt).</Description>
 		<PackageTags>AesGcm</PackageTags>
 		<PackageProjectUrl>https://github.com/sdrapkin/SecurityDriven.AesGcmStrict</PackageProjectUrl>
@@ -31,7 +32,8 @@
 	
 	<ItemGroup>
 		<None Remove="LICENSE.md" />
-		<None Remove="README.md" />
+		<None Include="README.md" Pack="true" PackagePath="\" />
 	</ItemGroup>
+	
 
 </Project>
