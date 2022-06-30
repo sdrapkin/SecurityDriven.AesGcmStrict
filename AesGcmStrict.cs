@@ -9,6 +9,9 @@ namespace SecurityDriven
 	/// </summary>
 	public sealed class AesGcmStrict : IDisposable
 	{
+		// Copyright (c) 2022 Stan Drapkin
+		// LICENSE: https://github.com/sdrapkin/SecurityDriven.AesGcmStrict
+
 		readonly AesGcm _aesGcm;
 
 		const int FIXED_TAG_LENGTH = 16;
