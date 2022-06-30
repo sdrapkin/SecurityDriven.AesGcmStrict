@@ -31,7 +31,7 @@ Most users of [AesGcm](https://docs.microsoft.com/en-us/dotnet/api/system.securi
 1. Add the namespace: `using SecurityDriven;`
 2. Replace `AesGcm` with `AesGcmStrict`
 
-## Same example with AesGcmStrict:
+## Same example with `AesGcmStrict`:
 ```csharp
 // using SecurityDriven;
 Span<byte> plaintext = Encoding.UTF8.GetBytes("Hello World!");
