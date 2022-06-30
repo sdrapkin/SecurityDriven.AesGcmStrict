@@ -8,13 +8,13 @@
 		<Copyright>Copyright © $([System.DateTime]::UtcNow.ToString(yyyy)) Stan Drapkin</Copyright>
 		<RepositoryUrl>https://github.com/sdrapkin/SecurityDriven.AesGcmStrict</RepositoryUrl>
 		<RepositoryType>git</RepositoryType>
-		<Version>1.0.1</Version>
+		<Version>1.0.2</Version>
 		<SignAssembly>false</SignAssembly>
 		<AssemblyOriginatorKeyFile>Inferno.snk</AssemblyOriginatorKeyFile>
 		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
 		<PackageLicenseExpression>MIT</PackageLicenseExpression>
 		<PackageIconUrl>https://avatars.githubusercontent.com/u/9137858?s=128</PackageIconUrl>
-		<PackageReleaseNotes>Replacement for System.Security.Cryptoraphy.AesGcm</PackageReleaseNotes>
+		<PackageReleaseNotes>Replacement for System.Security.Cryptography.AesGcm.</PackageReleaseNotes>
 		<PackageReadmeFile>README.md</PackageReadmeFile>
 		<Description>Wraps AesGcm and enforces AesGcm Tag to be exactly 16 bytes. Use AesGcmStrict instead of AesGcm. AesGcm allows truncated Tags (ex. any AesGcm-provided Tag truncated to 12 bytes will successfully decrypt).</Description>
 		<PackageTags>AesGcm</PackageTags>
