@@ -40,7 +40,7 @@ Span<byte> nonce = new byte[12];
 Span<byte> ciphertext = new byte[plaintext.Length];
 Span<byte> tag = new byte[16]; // generating a 16-byte Tag!
 
-using var gcm = new AesGcm(key);
+using var gcm = new AesGcmStrict(key); // switching to AesGcmStrict
 
 Console.WriteLine(Encoding.UTF8.GetString(plaintext));
 
